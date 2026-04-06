@@ -1,0 +1,90 @@
+/* HEADER */
+header {
+    width: 100%;
+    background-color: var(--azul-principal);
+}
+
+/* NAV */
+nav {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 30px;
+    height: 70px;
+    color: var(--blanco);
+    font-size: 1.1rem;
+}
+
+/* LOGO (placeholder de marca) */
+nav::before {
+    content: "Estudio Jurídico";
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* LISTA */
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+/* ITEMS */
+.menu li {
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+/* HOVER */
+.menu li:hover {
+    color: #cbd5e1;
+}
+
+/* BOTÓN HAMBURGUESA */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.4rem;
+    cursor: pointer;
+}
+
+/* BANNER */
+.banner img {
+    display: block;
+    width: 100%;
+    object-fit: cover;
+    height: calc(100vh - 70px);
+}
+
+/* =================== */
+/* RESPONSIVE (MOBILE) */
+/* =================== */
+
+@media (max-width: 768px) {
+
+    nav ul {
+        position: absolute;
+        top: 60px;
+        left: 0;
+        width: 100%;
+        background-color: var(--azul-principal);
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 20px 0;
+
+        /* oculto por defecto */
+        display: none;
+    }
+
+    nav ul.active {
+        display: flex;
+    }
+
+    .menu-toggle {
+        display: flex;
+    }
+}
