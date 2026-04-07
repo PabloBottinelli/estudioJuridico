@@ -6,6 +6,12 @@
     <title>Pagina Anita</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/seccionBienvenida.css">
+    <link rel="stylesheet" href="css/seccionAreas.css">
+    <link rel="stylesheet" href="css/seccionNosotros.css">
+    <link rel="stylesheet" href="css/seccionServicios.css">
+    <link rel="stylesheet" href="css/seccionContacto.css">
+    <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/dc19d10b3a.js" crossorigin="anonymous"></script>
 </head>
 <body>
@@ -30,41 +36,202 @@
     </header>
     
     <section class="bienvenida">
-        <span>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe, quia corporis. Ratione quibusdam minus sint ab, animi exercitationem nisi, facilis ipsam, eius quia nobis. Impedit fugit laborum aperiam sint aut."</span>
+        <div class="bienvenida-contenido">
+            <blockquote>
+                Brindamos soluciones legales con compromiso, ética y excelencia profesional.
+            </blockquote>
+            <p class="autor">Estudio Jurídico</p>
+        </div>
     </section>
     
     <div class="separador"></div>
-    <!-- <div class="separador-icono"><i class="fas fa-balance-scale"></i></div> -->
 
-    <section class="areas"></section>
+    <section class="areas">
+        <h2>Áreas de asesoramiento</h2>
+
+        <div class="areas-grid">
+
+            <div class="area">
+                <i class="fas fa-balance-scale"></i>
+                <p>Legislación Escolar</p>
+            </div>
+
+            <div class="area">
+                <i class="fas fa-building"></i>
+                <p>Derecho Societario</p>
+            </div>
+
+            <div class="area">
+                <i class="fas fa-church"></i>
+                <p>Derecho de la Iglesia</p>
+            </div>
+
+            <div class="area">
+                <i class="fas fa-gavel"></i>
+                <p>Derecho Procesal</p>
+            </div>
+
+            <div class="area">
+                <i class="fas fa-briefcase"></i>
+                <p>Derecho Laboral</p>
+            </div>
+
+        </div>
+    </section>
 
     <div class="separador"></div>
 
-    <section class="nosotros"></section>
-
-    <div class="separador"></div>
-
-    <section class="servicios"></section>
-    
-    <div class="separador"></div>
-
-    <section class="profesionales"></section>
-
-    <div class="separador"></div>
-
-    <section class="clientes"></section>
-
-    <div class="separador"></div>
-
-    <section class="imagenes"></section>
-
-    <div class="separador"></div>
-
-    <section class="contacto"></section>
-
-    
-    <footer>
+    <section class="nosotros">
         
+        <div class="nosotros-contenido">
+
+            <div class="nosotros-icono">
+                <i class="fas fa-balance-scale"></i>
+            </div>
+
+            <h2>Sobre Nosotros</h2>
+
+            <p class="nosotros-texto">
+                Somos un estudio jurídico comprometido con brindar asesoramiento legal integral, 
+                basado en la ética, la responsabilidad y la excelencia profesional. 
+                Nuestro equipo cuenta con experiencia en diversas áreas del derecho, 
+                ofreciendo soluciones personalizadas para cada cliente.
+            </p>
+
+            <p class="nosotros-texto">
+                Trabajamos con cercanía y dedicación, entendiendo cada situación en su contexto, 
+                para garantizar un servicio confiable y eficiente.
+            </p>
+
+        </div>
+
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="servicios">
+
+        <h2>Servicios</h2>
+
+        <div class="servicios-grid">
+
+            <div class="servicio">
+                <i class="fas fa-balance-scale"></i>
+                <h3>Asesoramiento Legal</h3>
+                <p>Brindamos orientación jurídica integral para la toma de decisiones seguras y fundamentadas.</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fas fa-gavel"></i>
+                <h3>Representación Judicial</h3>
+                <p>Defensa y representación en procesos judiciales, con compromiso y estrategia legal.</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fas fa-file-contract"></i>
+                <h3>Redacción de Contratos</h3>
+                <p>Elaboración y revisión de contratos adaptados a cada necesidad legal.</p>
+            </div>
+
+            <div class="servicio">
+                <i class="fas fa-users"></i>
+                <h3>Consultoría Empresarial</h3>
+                <p>Asistencia legal para empresas en cuestiones societarias y laborales.</p>
+            </div>
+
+        </div>
+
+    </section>
+    
+    <div class="separador"></div>
+
+    <!-- <section class="profesionales"></section> -->
+
+    <!-- <div class="separador"></div> -->
+
+    <!-- <section class="clientes"></section> -->
+
+    <!-- <div class="separador"></div> -->
+
+    <!-- <section class="imagenes"></section> -->
+
+    <!-- <div class="separador"></div> -->
+
+    <section class="contacto">
+        <div class="contacto-contenedor">
+            
+            <div class="contacto-info">
+                <div class="contacto-icono">
+                    <i class="fas fa-balance-scale"></i>
+                </div>
+
+                <h2>Contacto</h2>
+
+                <p>
+                    Estamos a disposición para brindarle asesoramiento legal y responder sus consultas con seriedad y compromiso.
+                </p>
+
+                <div class="dato-contacto">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span>Ciudad Autónoma de Buenos Aires, Argentina</span>
+                </div>
+
+                <div class="dato-contacto">
+                    <i class="fas fa-phone-alt"></i>
+                    <span>+54 11 1234 5678</span>
+                </div>
+
+                <div class="dato-contacto">
+                    <i class="fas fa-envelope"></i>
+                    <span>contacto@estudiojuridico.com</span>
+                </div>
+            </div>
+
+            <form class="contacto-formulario">
+                <input type="text" placeholder="Nombre y apellido" required>
+                <input type="email" placeholder="Correo electrónico" required>
+                <input type="text" placeholder="Asunto">
+                <textarea placeholder="Escriba su consulta" rows="6" required></textarea>
+                <button type="submit">Enviar consulta</button>
+            </form>
+
+        </div>
+    </section>
+
+    <footer class="footer">
+
+        <div class="footer-contenido">
+
+            <div class="footer-col">
+                <h3>Estudio Jurídico</h3>
+                <p>
+                    Brindamos asesoramiento legal integral con compromiso, ética y profesionalismo.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Contacto</h4>
+                <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
+                <p><i class="fas fa-phone-alt"></i> +54 11 1234 5678</p>
+                <p><i class="fas fa-envelope"></i> contacto@estudio.com</p>
+            </div>
+
+            <div class="footer-col">
+                <h4>Secciones</h4>
+                <ul>
+                    <li>Áreas</li>
+                    <li>Nosotros</li>
+                    <li>Servicios</li>
+                    <li>Contacto</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Estudio Jurídico. Todos los derechos reservados.</p>
+        </div>
+
     </footer>
 </body>
 </html>
