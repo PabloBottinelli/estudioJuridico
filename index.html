@@ -6,10 +6,12 @@
     <title>Pagina Anita</title>
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/header.css">
-    <link rel="stylesheet" href="css/seccionAreas.css">
     <link rel="stylesheet" href="css/seccionNosotros.css">
     <link rel="stylesheet" href="css/seccionServicios.css">
     <link rel="stylesheet" href="css/seccionContacto.css">
+    <link rel="stylesheet" href="css/seccionAreas.css">
+    <link rel="stylesheet" href="css/seccionElegirnos.css">
+    <link rel="stylesheet" href="css/seccionCTA.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/dc19d10b3a.js" crossorigin="anonymous"></script>
 </head>
@@ -31,7 +33,17 @@
             </ul>
         </nav>
 
-        <div class="banner"><img src="media/banner.jpg" alt=""></div>
+        <div class="banner">
+            <div class="banner-overlay">
+                <div class="banner-contenido">
+                    <h1>Estudio Jurídico</h1>
+
+                    <p class="banner-frase">
+                        Frase corta
+                    </p>
+                </div>
+            </div>  
+        </div>
     </header>
     
     <section class="nosotros">
@@ -63,36 +75,44 @@
     
     <div class="separador"></div>
 
-    <section class="areas">
-        <h2>Áreas de asesoramiento</h2>
+    <section class="areas" id="areas">
+        <div class="contenedor">
+            <h2>Áreas de práctica</h2>
+            <p class="areas-intro">
+                Brindamos asesoramiento y acompañamiento jurídico en distintas áreas, adaptándonos a las necesidades específicas de cada institución, organización o proyecto.
+            </p>
 
-        <div class="areas-grid">
+            <div class="areas-grid">
+                <div class="area-item">
+                    <h3>Legislación Escolar</h3>
+                    <p>Asesoramiento en normativa educativa, organización institucional y marcos regulatorios aplicables a establecimientos y comunidades educativas.</p>
+                </div>
 
-            <div class="area">
-                <i class="fas fa-balance-scale"></i>
-                <p>Titulo</p>
+                <div class="area-item">
+                    <h3>Derecho Societario</h3>
+                    <p>Acompañamiento en constitución, funcionamiento, organización y toma de decisiones dentro de sociedades y estructuras jurídicas diversas.</p>
+                </div>
+
+                <div class="area-item">
+                    <h3>Derecho Procesal</h3>
+                    <p>Intervención y seguimiento en procesos judiciales, con enfoque técnico y estratégico según las particularidades de cada caso.</p>
+                </div>
+
+                <div class="area-item">
+                    <h3>Derecho Laboral</h3>
+                    <p>Asesoramiento en relaciones laborales, prevención de conflictos, encuadres normativos y resolución de situaciones vinculadas al trabajo.</p>
+                </div>
+
+                <div class="area-item">
+                    <h3>Asesoramiento Institucional</h3>
+                    <p>Consultoría jurídica orientada al fortalecimiento organizacional, la toma de decisiones y la prevención de contingencias legales.</p>
+                </div>
+
+                <div class="area-item">
+                    <h3>Entidades del Tercer Sector</h3>
+                    <p>Acompañamiento legal a asociaciones civiles, fundaciones y emprendimientos sociales en sus procesos de organización, funcionamiento y desarrollo.</p>
+                </div>
             </div>
-
-            <div class="area">
-                <i class="fas fa-building"></i>
-                <p>Titulo</p>
-            </div>
-
-            <div class="area">
-                <i class="fas fa-church"></i>
-                <p>Titulo</p>
-            </div>
-
-            <div class="area">
-                <i class="fas fa-gavel"></i>
-                <p>Titulo</p>
-            </div>
-
-            <div class="area">
-                <i class="fas fa-briefcase"></i>
-                <p>Titulo</p>
-            </div>
-
         </div>
     </section>
 
@@ -103,48 +123,98 @@
         <h2>Servicios</h2>
 
         <div class="servicios-grid">
+            <div class="servicio">
+                <i class="fas fa-book"></i>                
+                <h3>Legislación Escolar</h3>
+                <p>Descripción</p>
+            </div>
 
             <div class="servicio">
-                <i class="fas fa-balance-scale"></i>
-                <h3>Asesoramiento Legal</h3>
-                <p>Brindamos orientación jurídica integral para la toma de decisiones seguras y fundamentadas.</p>
+                <i class="fas fa-handshake"></i>
+                <h3>Derecho Societario</h3>
+                <p>Descripción</p>
             </div>
 
             <div class="servicio">
                 <i class="fas fa-gavel"></i>
-                <h3>Representación Judicial</h3>
-                <p>Defensa y representación en procesos judiciales, con compromiso y estrategia legal.</p>
+                <h3>Derecho Procesal</h3>
+                <p>Descripción</p>
             </div>
 
             <div class="servicio">
-                <i class="fas fa-file-contract"></i>
-                <h3>Redacción de Contratos</h3>
-                <p>Elaboración y revisión de contratos adaptados a cada necesidad legal.</p>
+                <i class="fas fa-briefcase"></i>
+                <h3>Derecho Laboral</h3>
+                <p>Descripción</p>
             </div>
+        </div>
 
-            <div class="servicio">
-                <i class="fas fa-users"></i>
-                <h3>Consultoría Empresarial</h3>
-                <p>Asistencia legal para empresas en cuestiones societarias y laborales.</p>
+        <div class="tipos-clientes">
+            <h3>Asesoramos a organizaciones de distintos sectores</h3>
+
+            <div class="clientes-tags">
+                <span>Universidades y Colegios Universitarios</span>
+                <span>Asociaciones Civiles</span>
+                <span>Cámaras Empresarias</span>
+                <span>Sociedades Comerciales</span>
+                <span>Emprendimientos Sociales</span>
             </div>
-
         </div>
 
     </section>
-    
+
     <div class="separador"></div>
 
-    <!-- <section class="profesionales"></section> -->
+    <section class="cta-intermedio">
+        <div class="contenedor cta-contenido">
+            <div>
+                <h2>¿Necesita asesoramiento jurídico?</h2>
+                <p>
+                    Estamos para acompañarlo con una atención profesional, clara y orientada a las necesidades de su organización o proyecto.
+                </p>
+            </div>
 
-    <!-- <div class="separador"></div> -->
+            <a href="#contacto" class="btn-cta">Realizar una consulta</a>
+        </div>
+    </section>
+    
+    <div class="separador"></div>
+    
+    <section class="elegirnos" id="elegirnos">
+        <div class="contenedor">
+            <h2>Por qué elegirnos</h2>
+            <p class="elegirnos-intro">
+                Nuestro trabajo combina conocimiento jurídico, compromiso institucional y una atención cercana a cada realidad.
+            </p>
 
-    <!-- <section class="clientes"></section> -->
+            <div class="elegirnos-grid">
+                <div class="elegirnos-item">
+                    <span class="numero">01</span>
+                    <h3>Mirada integral</h3>
+                    <p>Abordamos cada situación considerando sus dimensiones jurídicas, institucionales y humanas.</p>
+                </div>
 
-    <!-- <div class="separador"></div> -->
+                <div class="elegirnos-item">
+                    <span class="numero">02</span>
+                    <h3>Asesoramiento personalizado</h3>
+                    <p>Trabajamos de manera cercana, atendiendo las particularidades y necesidades de cada cliente.</p>
+                </div>
 
-    <!-- <section class="imagenes"></section> -->
+                <div class="elegirnos-item">
+                    <span class="numero">03</span>
+                    <h3>Compromiso y seriedad</h3>
+                    <p>Desarrollamos cada intervención con responsabilidad profesional, claridad y confidencialidad.</p>
+                </div>
 
-    <!-- <div class="separador"></div> -->
+                <div class="elegirnos-item">
+                    <span class="numero">04</span>
+                    <h3>Prevención y estrategia</h3>
+                    <p>Buscamos no solo resolver conflictos, sino también anticiparlos y acompañar decisiones con criterio jurídico.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
 
     <section class="contacto">
         <div class="contacto-contenedor">

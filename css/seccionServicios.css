@@ -24,7 +24,7 @@
     border-radius: 8px;
     transition: 0.3s;
     box-shadow: 0 4px 10px rgba(0,0,0,0.05);
-    border-top: 3px solid transparent;
+    border-top: 3px solid var(--azul-principal);
 }
 
 /* ICONO */
@@ -52,6 +52,47 @@
 .servicio:hover {
     transform: translateY(-5px);
     box-shadow: 0 10px 20px rgba(0,0,0,0.08);
-    border-top: 3px solid var(--azul-principal);
 }
 
+/* CLIENTES */
+.tipos-clientes {
+    margin-top: 80px;
+    text-align: center;
+}
+
+.tipos-clientes h3 {
+    font-size: 1.6rem;
+    color: var(--azul-principal);
+    margin-bottom: 30px;
+    font-weight: 600;
+}
+
+/* contenedor */
+.clientes-tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 14px;
+    max-width: 950px;
+    margin: 0 auto;
+}
+
+/* cada tag */
+.clientes-tags span {
+    background-color: var(--gris-claro);
+    padding: 14px 26px;
+    border-radius: 999px;
+    font-size: 1.1rem; 
+    font-weight: 500;   
+    color: #1f2937;
+    transition: all 0.25s ease;
+    letter-spacing: 0.2px;
+    border: 1px solid var(--azul-principal);
+}
+
+/* hover */
+.clientes-tags span:hover {
+    background-color: white;
+    color: var(--azul-principal);
+    transform: translateY(-2px);
+}
