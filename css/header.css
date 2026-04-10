@@ -6,7 +6,11 @@ header {
 
 /* NAV */
 nav {
-    position: relative;
+    background-color: var(--azul-principal);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -54,7 +58,7 @@ nav::before {
 /* BANNER */
 .banner {
     position: relative;
-    height: calc(100vh - 70px);
+    height: 100vh;
     background-image: url("../media/banner.jpg");
     background-size: cover;
     background-position: center;

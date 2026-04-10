@@ -11,6 +11,8 @@
     <link rel="stylesheet" href="css/seccionContacto.css">
     <link rel="stylesheet" href="css/seccionAreas.css">
     <link rel="stylesheet" href="css/seccionElegirnos.css">
+    <link rel="stylesheet" href="css/seccionValores.css">
+    <link rel="stylesheet" href="css/seccionProfesionales.css">
     <link rel="stylesheet" href="css/seccionCTA.css">
     <link rel="stylesheet" href="css/footer.css">
     <script src="https://kit.fontawesome.com/dc19d10b3a.js" crossorigin="anonymous"></script>
@@ -23,13 +25,12 @@
             </button>
 
             <ul class="menu" id="menu">
-                <li>Áreas</li>
-                <li>Nosotros</li>
-                <li>Servicios</li>
-                <li>Profesionales</li>
-                <li>Clientes</li>
-                <li>Imágenes</li>
-                <li>Contacto</li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#areas">Áreas de Práctica</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#elegirnos">¿Por qué elegirnos?</a></li>
+                <li><a href="#profesionales">Profesionales</a></li>
+                <li><a href="#contacto">Contacto</a></li>
             </ul>
         </nav>
 
@@ -39,14 +40,14 @@
                     <h1>Estudio Jurídico</h1>
 
                     <p class="banner-frase">
-                        Frase corta
+                        Asesoramiento jurídico claro, cercano y estratégico.
                     </p>
                 </div>
             </div>  
         </div>
     </header>
     
-    <section class="nosotros">
+    <section class="nosotros" id="nosotros">
         <div class="nosotros-contenido">
 
             <div class="nosotros-icono">
@@ -56,18 +57,22 @@
             <h2>Sobre Nosotros</h2>
 
             <p class="nosotros-texto">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Temporibus, magnam ea. Harum dignissimos, earum praesentium veritatis odio quo, possimus iure reiciendis pariatur deleniti consequatur iusto, libero reprehenderit vero officia debitis? Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia deleniti nihil explicabo praesentium, perspiciatis repellat voluptatum voluptates nobis voluptatem esse quaerat odit aperiam incidunt illum tenetur doloremque! Iusto, magnam natus!
+                Somos un estudio jurídico orientado al asesoramiento integral de instituciones, organizaciones y empresas. 
+                Nuestro trabajo se centra en brindar soluciones legales claras, con un enfoque práctico y adaptado a las 
+                particularidades de cada caso.
             </p>
 
             <p class="nosotros-texto">
-                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eius libero, beatae exercitationem et aperiam non nobis. Unde sapiente quas temporibus dignissimos. Illo, porro ipsum eaque blanditiis sequi nihil earum a! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa ipsum non quam dolore. Qui beatae repellendus, dolores animi, natus mollitia asperiores vero molestiae dolorum odit similique. Ea deleniti nostrum ullam. 
+                Entendemos el derecho como una herramienta para acompañar procesos, prevenir conflictos y fortalecer la 
+                toma de decisiones. Por eso, trabajamos de manera cercana con cada cliente, combinando rigor técnico, 
+                compromiso profesional y una mirada estratégica.
             </p>
 
         </div>
 
         <div class="frase-contenido">
             <blockquote>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, maiores voluptatum? Libero amet id eius beatae.
+                El asesoramiento jurídico no se limita a resolver problemas, sino a acompañar decisiones con claridad y responsabilidad.
             </blockquote>
             <p class="autor">Estudio Jurídico</p>
         </div>
@@ -118,7 +123,7 @@
 
     <div class="separador"></div>
 
-    <section class="servicios">
+    <section class="servicios" id="servicios">
 
         <h2>Servicios</h2>
 
@@ -126,25 +131,37 @@
             <div class="servicio">
                 <i class="fas fa-book"></i>                
                 <h3>Legislación Escolar</h3>
-                <p>Descripción</p>
+                <p>
+                    Asesoramiento a instituciones educativas en normativa vigente, organización interna 
+                    y gestión de situaciones legales propias del ámbito escolar.
+                </p>
             </div>
 
             <div class="servicio">
                 <i class="fas fa-handshake"></i>
                 <h3>Derecho Societario</h3>
-                <p>Descripción</p>
+                <p>
+                    Acompañamiento en la constitución, funcionamiento y toma de decisiones de sociedades, 
+                    con enfoque en su organización y desarrollo jurídico.
+                </p>
             </div>
 
             <div class="servicio">
                 <i class="fas fa-gavel"></i>
                 <h3>Derecho Procesal</h3>
-                <p>Descripción</p>
+                <p>
+                    Intervención en procesos judiciales, brindando asistencia técnica y seguimiento 
+                    estratégico en cada etapa del procedimiento.
+                </p>
             </div>
 
             <div class="servicio">
                 <i class="fas fa-briefcase"></i>
                 <h3>Derecho Laboral</h3>
-                <p>Descripción</p>
+                <p>
+                    Asesoramiento en relaciones laborales, prevención de conflictos y resolución de 
+                    situaciones vinculadas al ámbito del trabajo.
+                </p>
             </div>
         </div>
 
@@ -167,7 +184,7 @@
     <section class="cta-intermedio">
         <div class="contenedor cta-contenido">
             <div>
-                <h2>¿Necesita asesoramiento jurídico?</h2>
+                <h2>¿Necesitas asesoramiento jurídico?</h2>
                 <p>
                     Estamos para acompañarlo con una atención profesional, clara y orientada a las necesidades de su organización o proyecto.
                 </p>
@@ -216,7 +233,68 @@
 
     <div class="separador"></div>
 
-    <section class="contacto">
+    <!-- <section class="valores" id="valores">
+        <div class="contenedor">
+            <h2>Nuestros valores</h2>
+
+            <div class="valores-grid">
+                <div class="valor-item">
+                    <h3>Compromiso</h3>
+                    <p>Asumimos cada consulta con responsabilidad y dedicación profesional.</p>
+                </div>
+
+                <div class="valor-item">
+                    <h3>Confidencialidad</h3>
+                    <p>Garantizamos un tratamiento serio y reservado de cada situación.</p>
+                </div>
+
+                <div class="valor-item">
+                    <h3>Claridad</h3>
+                    <p>Promovemos una comunicación transparente y comprensible en cada etapa.</p>
+                </div>
+
+                <div class="valor-item">
+                    <h3>Profesionalismo</h3>
+                    <p>Trabajamos con rigor técnico y una mirada estratégica orientada a soluciones.</p>
+                </div>
+            </div>
+        </div>
+    </section> -->
+
+    <!-- <div class="separador"></div> -->
+
+    <section class="profesionales" id="profesionales">
+        <div class="contenedor">
+            <h2>Profesional</h2>
+
+            <div class="perfil-profesional">
+
+                <div class="perfil-imagen">
+                    <img src="media/pred.webp" alt="Foto profesional">
+                </div>
+
+                <div class="perfil-info">
+                    <h3>Nombre Apellido</h3>
+                    <p class="perfil-titulo">Abogada</p>
+
+                    <p class="perfil-descripcion">
+                        Profesional con formación en derecho y experiencia en asesoramiento a instituciones, organizaciones y empresas. 
+                        Su trabajo se orienta a brindar soluciones jurídicas claras, con una mirada integral y estratégica.
+                    </p>
+
+                    <ul class="perfil-datos">
+                        <li><strong>Especialidad:</strong> Derecho societario y asesoramiento institucional</li>
+                        <li><strong>Formación:</strong> Universidad XXX</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <div class="separador"></div>
+
+    <section class="contacto" id="contacto">
         <div class="contacto-contenedor">
             
             <div class="contacto-info">
@@ -278,10 +356,12 @@
             <div class="footer-col">
                 <h4>Secciones</h4>
                 <ul>
-                    <li>Áreas</li>
-                    <li>Nosotros</li>
-                    <li>Servicios</li>
-                    <li>Contacto</li>
+                    <li><a href="#nosotros">Nosotros</a></li>
+                    <li><a href="#areas">Áreas de Práctica</a></li>
+                    <li><a href="#servicios">Servicios</a></li>
+                    <li><a href="#elegirnos">¿Por qué elegirnos?</a></li>
+                    <li><a href="#profesionales">Profesionales</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
                 </ul>
             </div>
 

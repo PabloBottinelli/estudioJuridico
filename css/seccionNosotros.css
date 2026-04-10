@@ -16,8 +16,6 @@
 
 /* TITULO */
 .nosotros h2 {
-    font-size: 2rem;
-    color: var(--azul-principal);
     margin-bottom: 30px;
 }
 
@@ -25,7 +23,6 @@
 .nosotros-texto {
     font-size: 1rem;
     line-height: 1.7;
-    color: #374151;
     margin-bottom: 20px;
 }
 
@@ -52,7 +49,7 @@
     left: -20px;
     top: -20px;
     color: var(--azul-claro);
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 .nosotros blockquote::after {
@@ -62,13 +59,12 @@
     right: -20px;
     bottom: -20px;
     color: var(--azul-claro);
-    opacity: 0.3;
+    opacity: 0.6;
 }
 
 .autor {
     margin-top: 20px;
     font-size: 0.9rem;
-    color: #6b7280;
     letter-spacing: 1px;
     text-transform: uppercase;
 }

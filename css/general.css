@@ -27,3 +27,12 @@ section:nth-of-type(even) {
     background-color: var(--gris-claro);
 }
 
+h2{
+    font-size: 2rem;
+    color: var(--azul-principal);
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
