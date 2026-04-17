@@ -10,6 +10,7 @@ nav {
     position: fixed;
     width: 100%;
     top: 0;
+    left: 0;
     z-index: 1000;
     display: flex;
     justify-content: space-between;
@@ -20,39 +21,87 @@ nav {
     font-size: 1.1rem;
 }
 
-/* LOGO (placeholder de marca) */
+/* LOGO */
 nav::before {
-    content: "Estudio Jurídico";
+    content: "Consultora Cimientos";
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-/* LISTA */
+/* MENÚ DESKTOP */
 .menu {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-/* ITEMS */
 .menu li {
     cursor: pointer;
     transition: 0.3s;
 }
 
-/* HOVER */
 .menu li:hover {
     color: #cbd5e1;
 }
 
-/* BOTÓN HAMBURGUESA */
 .menu-toggle {
     display: none;
     background: none;
     border: none;
     color: white;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
     cursor: pointer;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+    nav {
+        position: fixed;
+        padding: 0 20px;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto;
+        z-index: 1101;
+    }
+
+    .menu {
+        position: absolute;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        background-color: var(--azul-principal);
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+        padding: 0;
+        margin: 0;
+
+        /* estado oculto */
+        opacity: 0;
+        transform: translateY(-10px);
+        pointer-events: none;
+
+        transition: opacity 0.3s ease, transform 0.3s ease;
+    }
+
+    .menu.active {
+        opacity: 1;
+        transform: translateY(0);
+        pointer-events: auto;
+    }
+
+    .menu li {
+        width: 100%;
+        text-align: center;
+    }
+
+    .menu li a {
+        display: block;
+        width: 100%;
+        padding: 18px 20px;
+    }
 }
 
 /* BANNER */
@@ -71,7 +120,7 @@ nav::before {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.45); 
+    background: rgba(0, 0, 0, 0.60); 
     display: flex;
     align-items: center;
     justify-content: center;
@@ -109,32 +158,4 @@ nav::before {
     color: rgba(255, 255, 255, 0.95);
 }
 
-/* =================== */
-/* RESPONSIVE (MOBILE) */
-/* =================== */
 
-@media (max-width: 768px) {
-
-    nav ul {
-        position: absolute;
-        top: 60px;
-        left: 0;
-        width: 100%;
-        background-color: var(--azul-principal);
-        flex-direction: column;
-        align-items: center;
-        gap: 20px;
-        padding: 20px 0;
-
-        /* oculto por defecto */
-        display: none;
-    }
-
-    nav ul.active {
-        display: flex;
-    }
-
-    .menu-toggle {
-        display: flex;
-    }
-}

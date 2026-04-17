@@ -10,6 +10,7 @@
     --azul-claro: #2e5c8a;
     --blanco: #ffffff;
     --gris-claro: #ebebeb;
+    --azul-secundario: #05294b;
 }
 
 .separador {
@@ -21,6 +22,7 @@
 
 section {
     padding: 80px 20px;
+    scroll-margin-top: 70px;
 }
 
 section:nth-of-type(even) {
@@ -35,4 +37,31 @@ h2{
 a {
     color: white;
     text-decoration: none;
+}
+
+/* BOTON FLOTANTE */
+.btn-flotante {
+    font-size: 1.2rem;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: var(--azul-secundario);
+    color: white;
+    padding: 20px 25px;
+    border-radius: 30px;
+    text-decoration: none;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+    z-index: 1000;
+    width: 400px;
+    opacity: 0;
+    transform: translateY(20px);
+    animation: aparecer 0.6s ease-out forwards;
+    text-align: center;
+}
+
+@keyframes aparecer {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
