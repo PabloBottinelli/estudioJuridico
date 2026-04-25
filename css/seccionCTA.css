@@ -1,49 +1,108 @@
 .cta-intermedio {
-    padding: 70px 20px;
-    background: linear-gradient(135deg, var(--azul-principal), #1e3a5f);
-}
-
-.cta-contenido {
-    max-width: 1100px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 30px;
-}
-
-.cta-contenido h2 {
+    position: relative;
+    background: linear-gradient(
+        135deg,
+        var(--azul-principal),
+        var(--azul-secundario)
+    );
     color: white;
-    margin-bottom: 12px;
+    text-align: center;
+    overflow: hidden;
 }
 
-.cta-contenido p {
-    max-width: 700px;
-    color: rgba(255, 255, 255, 0.92);
+.cta-intermedio .contenedor {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* TEXTO */
+.cta-intermedio h2 {
+    font-size: clamp(1.8rem, 3vw, 2.4rem);
+    margin-bottom: 18px;
+    line-height: 1.3;
+}
+
+.cta-intermedio p {
+    font-size: clamp(1rem, 1.5vw, 1.1rem);
     line-height: 1.7;
-    font-size: 1.05rem;
+    margin-bottom: 30px;
+    opacity: 0.95;
 }
 
-.btn-cta {
+/* BOTÓN */
+.cta-intermedio a {
     display: inline-block;
     background-color: white;
     color: var(--azul-principal);
-    padding: 14px 28px;
+    padding: 14px 26px;
     border-radius: 999px;
     text-decoration: none;
     font-weight: 600;
-    transition: 0.3s ease;
-    white-space: nowrap;
+
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
 }
 
-.btn-cta:hover {
-    transform: translateY(-2px);
-    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.12);
+.cta-intermedio a:hover {
+    transform: translateY(-3px) scale(1.04);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
 }
 
+.cta-intermedio a:active {
+    transform: scale(0.96);
+}
+
+/* TABLET */
+@media (max-width: 1100px) {
+    .cta-intermedio {
+        padding: 70px 24px;
+    }
+
+    .cta-intermedio p {
+        margin-bottom: 26px;
+    }
+}
+
+/* MOBILE */
 @media (max-width: 768px) {
-    .cta-contenido {
-        flex-direction: column;
-        text-align: center;
+    .cta-intermedio {
+        padding: 60px 18px;
+    }
+
+    .cta-intermedio h2 {
+        line-height: 1.25;
+    }
+
+    .cta-intermedio p {
+        margin-bottom: 24px;
+    }
+
+    .cta-intermedio a {
+        width: 100%;
+        max-width: 320px;
+        padding: 14px 20px;
+    }
+}
+
+/* MOBILE CHICO */
+@media (max-width: 420px) {
+    .cta-intermedio {
+        padding: 50px 14px;
+    }
+
+    .cta-intermedio p {
+        font-size: 0.95rem;
+        line-height: 1.6;
+    }
+
+    .cta-intermedio a {
+        font-size: 0.95rem;
+        padding: 12px 18px;
+    }
+}
+
+/* MUY CHICO */
+@media (max-width: 340px) {
+    .cta-intermedio a {
+        font-size: 0.9rem;
     }
 }
