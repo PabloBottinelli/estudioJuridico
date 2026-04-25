@@ -21,27 +21,25 @@ nav {
     font-size: 1.1rem;
 }
 
-/* LOGO */
-nav::before {
+.logo {
     content: "Consultora Cimientos";
     font-weight: bold;
     letter-spacing: 1px;
 }
 
-/* MENÚ DESKTOP */
 .menu {
     list-style: none;
     display: flex;
     gap: 25px;
 }
 
-.menu li {
-    cursor: pointer;
-    transition: 0.3s;
+.menu li a{
+    display: inline-block;
+    transition: opacity 0.3s ease, transform 0.3s ease;
 }
 
-.menu li:hover {
-    color: #cbd5e1;
+.menu li a:hover{
+    transform: translateY(-2px);
 }
 
 .menu-toggle {
@@ -53,10 +51,43 @@ nav::before {
     cursor: pointer;
 }
 
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1100px) {
+    nav {
+        height: auto;
+        min-height: 100px;
+        padding: 12px 24px;
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 10px;
+    }
+
+    .logo {
+        width: 100%;
+        text-align: center;
+        font-size: 1.2rem;
+    }
+
+    .menu {
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 8px 20px;
+    }
+
+    .menu li a {
+        font-size: 1.05rem;
+        padding: 6px 0;
+    }
+
+    section {
+        scroll-margin-top: 110px;
+    }
+}
+
 /* MOBILE */
 @media (max-width: 768px) {
     nav {
-        position: fixed;
         padding: 0 20px;
     }
 
@@ -77,12 +108,9 @@ nav::before {
         gap: 0;
         padding: 0;
         margin: 0;
-
-        /* estado oculto */
         opacity: 0;
         transform: translateY(-10px);
         pointer-events: none;
-
         transition: opacity 0.3s ease, transform 0.3s ease;
     }
 
@@ -113,7 +141,6 @@ nav::before {
     background-position: center;
 }
 
-/* capa oscura para que el texto se lea */
 .banner-overlay {
     position: absolute;
     top: 0;
@@ -127,7 +154,6 @@ nav::before {
     text-align: center;
 }
 
-/* contenido centrado */
 .banner-contenido {
     max-width: 900px;
     padding: 20px;
@@ -151,7 +177,6 @@ nav::before {
     margin-bottom: 20px;
 }
 
-/* frase flotante */
 .banner-frase {
     font-size: 1.7rem;
     line-height: 1.7;
