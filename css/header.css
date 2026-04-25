@@ -135,7 +135,8 @@ nav {
 /* BANNER */
 .banner {
     position: relative;
-    height: 100vh;
+    min-height: 100vh;
+    min-height: 100svh;
     background-image: url("../media/banner.jpg");
     background-size: cover;
     background-position: center;
@@ -143,22 +144,34 @@ nav {
 
 .banner-overlay {
     position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+    inset: 0;
     background: rgba(0, 0, 0, 0.60); 
     display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
+    padding: 90px 24px 40px;
 }
 
 .banner-contenido {
-    max-width: 900px;
-    padding: 20px;
+    width: 100%;
+    padding: 28px 32px;
     color: white;
     animation: fadeInUp 1s ease;
+}
+
+.banner-contenido h1 {
+    font-size: clamp(1.6rem, 5vw, 2.8rem);
+    line-height: 1.15;
+    margin-bottom: 20px;
+}
+
+.banner-frase {
+    max-width: 100%;
+    margin: 0 auto;
+    font-size: clamp(1.15rem, 2.4vw, 1.9rem);
+    line-height: 1.5;
+    color: rgba(255, 255, 255, 0.95);
 }
 
 @keyframes fadeInUp {
@@ -172,15 +185,59 @@ nav {
     }
 }
 
-.banner-contenido h1 {
-    font-size: 2.2rem;
-    margin-bottom: 20px;
+/* TABLET */
+@media (min-width: 769px) and (max-width: 1100px) {
+    .banner {
+        min-height: 720px;
+    }
+
+    .banner-overlay {
+        padding-top: 130px;
+    }
+
+    .banner-contenido {
+        max-width: 760px;
+    }
 }
 
-.banner-frase {
-    font-size: 1.7rem;
-    line-height: 1.7;
-    color: rgba(255, 255, 255, 0.95);
+/* MOBILE */
+@media (max-width: 768px) {
+    .banner {
+        min-height: 620px;
+    }
+
+    .banner-overlay {
+        padding: 95px 18px 36px;
+    }
+
+    .banner-contenido {
+        padding: 24px 18px;
+    }
+}
+
+/* MOBILE CHICO */
+@media (max-width: 420px) {
+    .banner {
+        min-height: 560px;
+    }
+
+    .banner-overlay {
+        padding-left: 14px;
+        padding-right: 14px;
+    }
+
+    .banner-contenido h1 {
+        margin-bottom: 14px;
+    }
+
+    .banner-frase {
+        line-height: 1.45;
+    }
+
+    .banner-contenido {
+        padding-left: 8px;
+        padding-right: 8px;
+    }
 }
 
 
