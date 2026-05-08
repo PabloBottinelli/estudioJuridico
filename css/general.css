@@ -22,7 +22,7 @@
 
 section {
     padding: 80px 20px;
-    scroll-margin-top: 70px;
+    scroll-margin-top: 90px;
 }
 
 section:nth-of-type(even) {

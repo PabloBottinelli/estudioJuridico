@@ -16,15 +16,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     padding: 0 30px;
-    height: 70px;
+    height: 90px;
     color: var(--blanco);
     font-size: 1.1rem;
 }
 
-.logo {
-    content: "Consultora Cimientos";
-    font-weight: bold;
-    letter-spacing: 1px;
+.logo img {
+    height: 75px;
 }
 
 .menu {
@@ -99,7 +97,7 @@ nav {
 
     .menu {
         position: absolute;
-        top: 70px;
+        top: 90px;
         left: 0;
         width: 100%;
         background-color: var(--azul-principal);
