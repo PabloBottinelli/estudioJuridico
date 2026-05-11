@@ -30,8 +30,11 @@
     max-width: 800px;
 }
 
-.nosotros-icono{
-    width: 70px;
+.logo-seccion {
+    display: block;
+    width: clamp(54px, 8vw, 74px);
+    height: auto;
+    margin-bottom: 14px;
 }
 
 .nosotros h2 {
@@ -160,9 +163,9 @@
         margin: 0 auto;
     }
 
-    .nosotros-icono {
-        font-size: 2.2rem;
-        margin-bottom: 14px;
+    .logo-seccion {
+        width: clamp(52px, 16vw, 68px);
+        margin: 0 auto 14px;
     }
 
     .nosotros h2 {

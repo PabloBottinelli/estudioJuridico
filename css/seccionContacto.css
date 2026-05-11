@@ -16,8 +16,8 @@
 }
 
 .contacto-icono {
-    width: 56px;
-    margin-bottom: 10px;
+    width: clamp(52px, 7vw, 64px);
+    margin-bottom: 12px;
 }
 
 .contacto-info h2 {
@@ -130,6 +130,11 @@
 
     .contacto-info {
         text-align: center;
+    }
+
+    .contacto-icono {
+        margin-left: auto;
+        margin-right: auto;
     }
 
     .contacto-info p {

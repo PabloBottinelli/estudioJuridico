@@ -21,8 +21,17 @@ nav {
     font-size: 1.1rem;
 }
 
-.logo img {
-    height: 75px;
+.logo {
+    display: inline-flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.logo-header {
+    display: block;
+    width: clamp(170px, 18vw, 245px);
+    max-height: 74px;
+    height: auto;
 }
 
 .menu {
@@ -62,8 +71,12 @@ nav {
 
     .logo {
         width: 100%;
-        text-align: center;
-        font-size: 1.2rem;
+        justify-content: center;
+    }
+
+    .logo-header {
+        width: clamp(190px, 28vw, 235px);
+        max-height: 74px;
     }
 
     .menu {
@@ -86,7 +99,13 @@ nav {
 /* MOBILE */
 @media (max-width: 768px) {
     nav {
-        padding: 0 20px;
+        height: 76px;
+        padding: 0 18px;
+    }
+
+    .logo-header {
+        width: clamp(135px, 45vw, 180px);
+        max-height: 58px;
     }
 
     .menu-toggle {
@@ -97,7 +116,7 @@ nav {
 
     .menu {
         position: absolute;
-        top: 90px;
+        top: 76px;
         left: 0;
         width: 100%;
         background-color: var(--azul-principal);
@@ -238,4 +257,18 @@ nav {
     }
 }
 
+.banner-logo {
+    display: block;
+    width: clamp(64px, 8vw, 95px);
+    height: auto;
+    margin: 0 auto 22px;
+    opacity: 0.95;
+    filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.25));
+}
 
+@media (max-width: 768px) {
+    .banner-logo {
+        width: clamp(56px, 18vw, 76px);
+        margin-bottom: 18px;
+    }
+}

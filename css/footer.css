@@ -33,11 +33,11 @@
 
 /* LOGO */
 .footer-logo {
-    width: 155px;
+    display: block;
+    width: clamp(145px, 16vw, 190px);
     max-width: 100%;
     height: auto;
-    display: block;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
 }
 
 .footer-col:first-child {
@@ -96,6 +96,10 @@
 
     .footer-logo {
         margin: 0 auto 18px;
-        width: 145px;
+        width: clamp(140px, 48vw, 170px);
+    }
+
+    .footer-col:not(:first-child) {
+        padding-top: 0;
     }
 }
