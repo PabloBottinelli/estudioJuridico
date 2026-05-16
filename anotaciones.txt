@@ -1,3 +1,6 @@
 Mirar cuesitones de seo
 Buscar que no haya codigo redundante o pisandose
 Generar los robots o cuestiones correspondientes
+Agregar preguntas frecuentes
+Agregar funcionalidad de form
+Agregar boton de whatsapp
