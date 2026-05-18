@@ -1,6 +1,9 @@
 Mirar cuesitones de seo
 Buscar que no haya codigo redundante o pisandose
-Generar los robots o cuestiones correspondientes
-Agregar preguntas frecuentes
-Agregar funcionalidad de form
-Agregar boton de whatsapp
+Agregar robots
+Agregar sitemaps
+Conectar a search console
+Agregar texto en areas de practica
+Agregar php form definiendo bien la info que quiere anita
+Agregar boton de whatsapp (preguntarle a anita, quizas es mejor que no)
+Crear mail personalizado
