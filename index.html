@@ -403,15 +403,39 @@
 
                 <div class="dato-contacto">
                     <i class="fas fa-envelope"></i>
-                    <span>contacto@estudiojuridico.com</span>
+                    <span>info@cimientos.com.ar</span>
                 </div>
             </div>
+            
+            <form class="contacto-formulario" action="enviar.php" method="POST">
+                <p id="mensaje-formulario" class="mensaje-formulario"></p>
+                <input 
+                    type="text" 
+                    name="nombre" 
+                    placeholder="Nombre y apellido" 
+                    required
+                >
 
-            <form class="contacto-formulario">
-                <input type="text" placeholder="Nombre y apellido" required>
-                <input type="email" placeholder="Correo electrónico" required>
-                <input type="text" placeholder="Asunto">
-                <textarea placeholder="Escriba su consulta" rows="6" required></textarea>
+                <input 
+                    type="email" 
+                    name="email" 
+                    placeholder="Correo electrónico" 
+                    required
+                >
+
+                <input 
+                    type="text" 
+                    name="asunto" 
+                    placeholder="Asunto"
+                >
+
+                <textarea 
+                    name="mensaje" 
+                    placeholder="Escriba su consulta" 
+                    rows="6" 
+                    required
+                ></textarea>
+
                 <button type="submit">Enviar consulta</button>
             </form>
 
@@ -438,7 +462,7 @@
                 <h4>Contacto</h4>
                 <p><i class="fas fa-map-marker-alt"></i> Buenos Aires, Argentina</p>
                 <p><i class="fab fa-whatsapp"></i> +54 11 54089583</p>
-                <p><i class="fas fa-envelope"></i> contacto@estudio.com</p>
+                <p><i class="fas fa-envelope"></i> info@cimientos.com.ar</p>
             </div>
 
             <div class="footer-col">
@@ -461,5 +485,21 @@
 
     </footer>
     <script src="js/menu-hamburguesa.js"></script>
+    <script>
+        const params = new URLSearchParams(window.location.search);
+        const mensajeFormulario = document.getElementById("mensaje-formulario");
+
+        if (mensajeFormulario) {
+            if (params.get("enviado") === "ok") {
+                mensajeFormulario.textContent = "Tu consulta fue enviada correctamente.";
+                mensajeFormulario.classList.add("exito");
+            }
+
+            if (params.get("error")) {
+                mensajeFormulario.textContent = "Hubo un problema al enviar la consulta. Revisá los datos e intentá nuevamente.";
+                mensajeFormulario.classList.add("error");
+            }
+        }
+    </script>
 </body>
 </html>

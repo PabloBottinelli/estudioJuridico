@@ -6,4 +6,3 @@ Conectar a search console
 Agregar texto en areas de practica
 Agregar php form definiendo bien la info que quiere anita
 Agregar boton de whatsapp (preguntarle a anita, quizas es mejor que no)
-Crear mail personalizado
