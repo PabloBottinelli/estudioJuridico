@@ -1,12 +1,13 @@
 RewriteEngine On
 
-# Forzar HTTPS
-RewriteCond %{HTTPS} off
-RewriteRule ^(.*)$ https://%{HTTP_HOST}/$1 [R=301,L]
-
-# Redirigir sin www a www
-RewriteCond %{HTTP_HOST} ^consultoracimientos\.com\.ar$ [NC]
+# Forzar HTTPS + WWW en una sola redirección
+RewriteCond %{HTTPS} off [OR]
+RewriteCond %{HTTP_HOST} !^www\.consultoracimientos\.com\.ar$ [NC]
 RewriteRule ^(.*)$ https://www.consultoracimientos.com.ar/$1 [R=301,L]
+
+# Redirigir /index.html a /
+RewriteCond %{THE_REQUEST} /index\.html [NC]
+RewriteRule ^index\.html$ https://www.consultoracimientos.com.ar/ [R=301,L]
 
 # Página principal
 DirectoryIndex index.html
